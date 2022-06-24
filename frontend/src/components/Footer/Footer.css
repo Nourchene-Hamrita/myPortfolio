@@ -1,0 +1,133 @@
+.footer {
+  background-color: rgb(26, 26, 26);
+  padding: 3vmax;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  width: 100%;
+  position: relative;
+}
+
+.footer>div>h5 {
+  color: white;
+  border-bottom: 1px solid white;
+  width: 120px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.footer>div>p {
+  color: white;
+  width: 60%;
+}
+
+.footer>div>h6 {
+  color: white;
+  text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #0073e6,
+    0 0 20px #0073e6,
+    0 0 25px #0073e6,
+    0 0 30px #0073e6,
+    0 0 35px #0073e6;
+  padding: 10px 0;
+  margin-right: 30px;
+}
+
+.footer>div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer>div>a {
+  font-size: 3vmax;
+  color: white;
+  transition: all 0.3s;
+  text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #0073e6,
+    0 0 20px #0073e6,
+    0 0 25px #0073e6,
+    0 0 30px #0073e6,
+    0 0 35px #0073e6;
+}
+
+.aboutme {
+  color: white;
+  text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #0073e6,
+    0 0 20px #0073e6,
+    0 0 25px #0073e6,
+    0 0 30px #0073e6,
+    0 0 35px #0073e6;
+
+}
+
+.footer>div>a:nth-child(2):hover {
+  color: rgb(64, 88, 226);
+
+}
+
+.footer>div>a:nth-child(3):hover {
+  color: rgb(64, 88, 226);
+}
+
+.footer>div>a:nth-child(4):hover {
+  color: rgb(119, 61, 212);
+}
+
+.footer>div>a:nth-child(5):hover {
+  color: rgb(64, 88, 226);
+}
+
+.footerContactBtn {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 2vmax 0;
+  border: 1px solid white;
+  transition: all 0.5s;
+}
+
+.footerContactBtn>p {
+  color: white;
+}
+
+.footerContactBtn:hover {
+  background-color: unset;
+}
+
+.footerContactBtn:hover p {
+  color: rgb(255, 255, 255);
+}
+
+.coordonnees {
+  color: white;
+  margin: 2vmax 0;
+  flex-direction: column;
+  width: 100%;
+}
+
+.coordonnee1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.icon {
+  position: relative;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:443px) {
+  .footer {
+    grid-template-columns: 1fr 100px;
+  }
+}
