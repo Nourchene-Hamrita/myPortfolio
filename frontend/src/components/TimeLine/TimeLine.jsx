@@ -26,7 +26,7 @@ const TimeLine = ({ timelines = [] }) => {
                     </VerticalTimelineElement>
                 ))}
                 <VerticalTimelineElement
-                    iconStyle={{boxShadow: 'inset 0 0 50px #fff,inset 20px 0 80px #0ff,inset -20px 0 80px #0ff,inset 20px 0 300px #0ff, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #0ff, 10px 0 80px #0ff', color: '#fff'  }}
+                    iconStyle={{ boxShadow: 'inset 0 0 50px #fff,inset 20px 0 80px #0ff,inset -20px 0 80px #0ff,inset 20px 0 300px #0ff, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #0ff, 10px 0 80px #0ff', color: '#fff' }}
                     icon={<MdStar />}
                 />
 

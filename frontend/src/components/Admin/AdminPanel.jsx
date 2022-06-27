@@ -3,7 +3,7 @@ import "./AdminPanel.css";
 import { Button, Typography } from "@mui/material";
 import { AiOutlineProject } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
-import { MdTimeline, MdWork,MdSettingsSuggest } from "react-icons/md";
+import { MdTimeline, MdWork, MdSettingsSuggest } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout, updateUser } from "../../actions/user";

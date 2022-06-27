@@ -66,11 +66,11 @@ function App() {
               path="/admin/timeline"
               element={isAuthenticated ? <Timeline /> : <Login />}
             />
-             <Route
+            <Route
               path="/admin/language"
               element={isAuthenticated ? <Languages /> : <Login />}
             />
-             <Route
+            <Route
               path="/admin/experience"
               element={isAuthenticated ? <Experience /> : <Login />}
             />
@@ -89,7 +89,7 @@ function App() {
             />
           </Routes>
 
-          <Footer name={user.about.name} address={user.address} phone={user.phone} email={user.email}  description={user.about.description}/>
+          <Footer name={user.about.name} address={user.address} phone={user.phone} email={user.email} description={user.about.description} />
         </>
       )}
     </Router>

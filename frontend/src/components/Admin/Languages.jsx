@@ -26,20 +26,20 @@ export const LanguageCard = ({
     return (
         <>
 
-            <div style={{ width: '50%',display: 'flex',boxSizing: 'border-box',boxShadow:'0 0 10px rgb(0, 0, 0)',flexDirection: 'column',alignItems: 'center',justifyContent: 'space-around'}}>
+            <div style={{ width: '50%', display: 'flex', boxSizing: 'border-box', boxShadow: '0 0 10px rgb(0, 0, 0)', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-around' }}>
 
                 <Typography variant="h5">{title}</Typography>
                 <Typography variant="h4">{percent}</Typography>
-            
- 
-            {isAdmin && (
-                <Button
-                    style={{ color: "rgba(40,40,40,0.7)" }}
-                    onClick={() => deleteHandler(id)}
-                >
-                    <Delete />
-                </Button>
-            )}
+
+
+                {isAdmin && (
+                    <Button
+                        style={{ color: "rgba(40,40,40,0.7)" }}
+                        onClick={() => deleteHandler(id)}
+                    >
+                        <Delete />
+                    </Button>
+                )}
             </div>
         </>
     );

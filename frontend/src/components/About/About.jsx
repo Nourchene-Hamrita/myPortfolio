@@ -10,8 +10,8 @@ const About = ({ about }) => {
             </div>
             <div className="aboutContainer2">
                 <div>
-                    {about.avatar?<img src={about.avatar.url} alt="nour" className="aboutAvatar" />:<img src="" alt="nour" className="aboutAvatar"/>}
-                    
+                    {about.avatar ? <img src={about.avatar.url} alt="nour" className="aboutAvatar" /> : <img src="" alt="nour" className="aboutAvatar" />}
+
 
                     <Typography
                         variant="h4"

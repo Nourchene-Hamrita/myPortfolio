@@ -174,7 +174,7 @@
 
 .homeContainer>h3 {
   text-align: center;
-  font-family:700 4vmax "Ubuntu Mono";
+  font-family: 700 4vmax "Ubuntu Mono";
   color: rgb(255, 255, 255);
   padding: 4vmax;
 }
@@ -198,7 +198,7 @@
 
 .homeSkills>h3 {
   text-align: center;
-  font-family:700 4vmax "Ubuntu Mono";
+  font-family: 700 4vmax "Ubuntu Mono";
   color: white;
   margin-bottom: 4vmax;
   font-size: 4vmax;
@@ -325,7 +325,7 @@
 
 .homeYoutube>h3 {
   text-align: center;
-  font-family:700 4vmax "Ubuntu Mono";
+  font-family: 700 4vmax "Ubuntu Mono";
   color: rgba(255, 255, 255, 0.904);
   padding: 4vmax;
 }

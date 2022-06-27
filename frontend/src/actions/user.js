@@ -92,7 +92,7 @@ export const loadUser = () => async (dispatch) => {
 };
 
 export const updateUser =
-  (name,address,phone, email, password, skills, about,interest) => async (dispatch) => {
+  (name, address, phone, email, password, skills, about, interest) => async (dispatch) => {
     try {
       dispatch({
         type: "UPDATE_USER_REQUEST",
@@ -180,7 +180,7 @@ export const deleteTimeline = (id) => async (dispatch) => {
     });
   }
 };
-export const addExperience = (title,job, description, date,image) => async (dispatch) => {
+export const addExperience = (title, job, description, date, image) => async (dispatch) => {
   try {
     dispatch({
       type: "ADD_EXPERIENCE_REQUEST",
@@ -330,7 +330,7 @@ export const deleteProject = (id) => async (dispatch) => {
   }
 };
 export const addSkill =
-  (name,percent) => async (dispatch) => {
+  (name, percent) => async (dispatch) => {
     try {
       dispatch({
         type: "ADD_SKILL_REQUEST",
@@ -338,7 +338,7 @@ export const addSkill =
 
       const { data } = await axios.post(
         "/api/v1/admin/skill/add",
-        {name,percent },
+        { name, percent },
         {
           headers: {
             "Content-Type": "application/json",
@@ -357,28 +357,28 @@ export const addSkill =
       });
     }
   };
-  export const deleteSkill = (id) => async (dispatch) => {
-    try {
-      dispatch({
-        type: "DELETE_SKILL_REQUEST",
-      });
-  
-      const { data } = await axios.delete(`/api/v1/admin/skill/${id}`);
-  
-      dispatch({
-        type: "DELETE_SILL_SUCCESS",
-        payload: data.message,
-      });
-    } catch (error) {
-      dispatch({
-        type: "DELETE_SKILL_FAILURE",
-        payload: error.response.data.message,
-      });
-    }
-  };
+export const deleteSkill = (id) => async (dispatch) => {
+  try {
+    dispatch({
+      type: "DELETE_SKILL_REQUEST",
+    });
 
-  export const addLanguage =
-  (title,percent) => async (dispatch) => {
+    const { data } = await axios.delete(`/api/v1/admin/skill/${id}`);
+
+    dispatch({
+      type: "DELETE_SILL_SUCCESS",
+      payload: data.message,
+    });
+  } catch (error) {
+    dispatch({
+      type: "DELETE_SKILL_FAILURE",
+      payload: error.response.data.message,
+    });
+  }
+};
+
+export const addLanguage =
+  (title, percent) => async (dispatch) => {
     try {
       dispatch({
         type: "ADD_LANGUAGE_REQUEST",
@@ -386,7 +386,7 @@ export const addSkill =
 
       const { data } = await axios.post(
         "/api/v1/admin/language/add",
-        {title,percent },
+        { title, percent },
         {
           headers: {
             "Content-Type": "application/json",
@@ -405,25 +405,25 @@ export const addSkill =
       });
     }
   };
-  export const deleteLanguage = (id) => async (dispatch) => {
-    try {
-      dispatch({
-        type: "DELETE_LANGUAGE_REQUEST",
-      });
-  
-      const { data } = await axios.delete(`/api/v1/admin/language/${id}`);
-  
-      dispatch({
-        type: "DELETE_LANGUAGE_SUCCESS",
-        payload: data.message,
-      });
-    } catch (error) {
-      dispatch({
-        type: "DELETE_LANGUAGE_FAILURE",
-        payload: error.response.data.message,
-      });
-    }
-  };
+export const deleteLanguage = (id) => async (dispatch) => {
+  try {
+    dispatch({
+      type: "DELETE_LANGUAGE_REQUEST",
+    });
+
+    const { data } = await axios.delete(`/api/v1/admin/language/${id}`);
+
+    dispatch({
+      type: "DELETE_LANGUAGE_SUCCESS",
+      payload: data.message,
+    });
+  } catch (error) {
+    dispatch({
+      type: "DELETE_LANGUAGE_FAILURE",
+      payload: error.response.data.message,
+    });
+  }
+};
 
 export const contactUs = (name, email, message) => async (dispatch) => {
   try {

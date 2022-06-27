@@ -420,7 +420,7 @@ const Home = ({ timelines, experiences, youtubes, skills, mainSkills, languages,
         sr.reveal('.homeCanvasBox', { delay: 400 });
         sr.reveal('.language ,.progress', { interval: 200 });
         sr.reveal('.inner-circle,', { interval: 200 });
-       
+
         return window.addEventListener("scroll", () => {
             //camera.rotation.z = window.scrollY * 0.001;
             //camera.rotation.y = window.scrollY * 0.003;
@@ -584,7 +584,7 @@ const Home = ({ timelines, experiences, youtubes, skills, mainSkills, languages,
                     {languages.map((item, index) => {
 
                         return <div className="language">
-                            <Typography variant="h5" style={{ flex: 2, color: 'white', marginBottom: '5px', textAlign: 'left', width: '50%'}}>{item.title}</Typography>
+                            <Typography variant="h5" style={{ flex: 2, color: 'white', marginBottom: '5px', textAlign: 'left', width: '50%' }}>{item.title}</Typography>
                             <div className="progress">
                                 <AnimatedLineProgressBar
                                     className="progress"
